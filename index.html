@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Francisco Balza</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/529b6de91d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/build/css/app.css">
+    
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="banner">
+            <div class=" contenido-video">
+                <div class="texto-header">
+                    <h1>
+                        Hola! Mi nombre es <span>Francisco Balza</span>
+                        <br>
+                        y soy desarrollador web.
+                    </h1>
+                    <a id="btn-principal" class="btn" href="#about">Conoceme</a>
+                </div>
+            </div>
+            
+            <video autoplay loop>
+                <source src="src/img/Source Code - 4733.mp4" type="video/mp4">
+            </video>
+        </div>
+    </header> <!-- Header -->
+
+    <section class="navegacion">
+        <div class="contenedor">
+            <nav class="navegacion-principal">
+                <a id="enlace1" href="#about">Quien soy?</a>
+                <a id="enlace2" href="#proyectos">Proyectos</a>
+                <a id="enlace3" href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </section> <!-- Navegacion -->
+
+    <section id="about" class="contenedor">
+        <div class="about">
+            <div class="quien-soy">
+                <img src="src/img/496D2576-18E6-49A6-B5CE-6E6F6BBFEB63.jpg" alt="imagen fran">
+                <h2>¿Quien soy?</h2>
+                <p> Mucho gusto! Me llamo Francisco. Soy Ingeniero Mecánico de profesión y también desarrollador web. Creciendo en desarrollo full-stack, para que tus proyectos web sean funcionales y se vean increibles!
+                </p>
+                <a id="btn-contacto" href="#contacto">¿Que tal si conversamos?</a>
+            </div>
+
+            <div class="skills">
+                <h2>Skills</h2>
+                
+                <ul class="iconos">
+                    <li><i class="fa-brands fa-html5"></i> HTML</li>
+                    <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+                    <li><i class="fa-brands fa-js-square"></i> JavaScript</li>
+                    <li><i class="fa-brands fa-php"></i> PHP</li>
+                    <li><i class="fa-solid fa-database"></i> MySQL</li>
+                    <li><i class="fa-brands fa-github"></i>GitHub</li>
+                </ul>
+            </div>
+        </div>
+    </section> <!-- about -->
+
+    <section id="proyectos" class="contenedor proyectos">
+        <h2>Proyectos</h2>
+        <div class="trabajos">
+            <div class="proyecto-contenido">
+                <a href="https://proyectonumerocero1.netlify.app" target="_blank" rel="noreferrer noopener">
+                    <img src="/src/img/Screenshot 2022-04-27 at 11-07-58 Rock & EDM Festival.png" alt="imagen proyecto">
+                    <p>Rock & EDM Festival</p>
+                    <p class="descripcion-visible">Proyecto frontend, hecho con solo html, scss y Javascript. Tiene interactividad en la manera como fluye la pag</p>
+                </a>
+            </div>
+
+            <div class="proyecto-contenido">
+                <a href="https://elated-aryabhata-e49c79.netlify.app" target="_blank" rel="noreferrer noopener">
+                    <img src="/src/img/Screenshot 2022-04-27 at 11-09-03 BlogDeCafé.png" alt="imagen proyecto">
+                    <p>BlogDeCafé</p>
+                    <p class="descripcion-visible">Esta es una pagina hecha solamente con html y css. Bastante basica en sus funcionalidades</p>
+                </a>
+            </div>
+
+            <div class="proyecto-contenido">
+                <a href="#">
+                    <img src="/src/img/Screenshot 2022-04-27 at 13-35-52 UpTask Iniciar Sesión.png" alt="imagen proyecto">
+                    <p>UpTask</p>
+                    <p class="descripcion-visible">Esta es una aplicacion web con funcionalidades backend. Hecha con Php y conectada a una base de datos SQL. Utilizando la metodologia MVC</p>
+                </a>
+            </div>
+        </div>
+    </section> <!-- Proyectos -->
+
+    <section id="contacto" class="contacto contenedor">
+        <div class="seccion-contacto">
+            <h2>Contacto</h2>
+            <p>¿Alguna pregunta o quieres trabajar conmigo?</p>
+
+            <form method="POST" class="formulario" action="https://formspree.io/f/xjvlprjz">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje"></textarea>
+                </div>
+                <input type="submit" class="btn" value="Enviar">
+            </form>
+        </div>
+    </section> <!-- Contacto -->
+
+    <footer class="footer">
+        <div class="redes">
+            <nav>
+                <a class="btn-redes" href="https://www.linkedin.com/in/francisco-balza-vidal-522819a2/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="btn-redes" href="https://www.instagram.com/fcoandresbalza/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-instagram"></i></a>
+                <a class="btn-redes" href="https://github.com/fcoandresbalza?tab=repositories" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-github"></i></a>
+            </nav>
+            <p>Francisco Balza <i class="fa-solid fa-copyright"></i></p>
+        </div>
+    </footer>
+
+<script src="/build/js/app.js"></script>
+</body>
+</html>
