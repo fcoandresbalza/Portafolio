@@ -1,0 +1,40 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.banner{
+    position: relative;
+    min-height: 50rem;
+    max-height: 700px;
+    overflow: hidden;
+
+
+    .contenido-video{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    video{
+        position: relative;
+        width: auto;
+        height: 100%;
+        display: block;
+        @include m.tablet {
+            width: 100%;
+        }
+    }
+}
+
+.texto-header{
+    z-index: 1000;
+    text-align: center;
+    color: v.$blanco;
+    font-weight: 700;
+    font-size:1.4rem;
+    span{
+        color: v.$fucsia;
+    }
+}

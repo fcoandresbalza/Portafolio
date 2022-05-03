@@ -1,0 +1,84 @@
+@use 'variables' as v;
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: v.$fuente_principal;
+    font-size: 1.6rem;
+
+    background: rgb(168,168,168);
+    background: linear-gradient(180deg, rgba(168,168,168,1) 4%, rgba(206,81,123,1) 18%, rgba(230,25,94,1) 30%, rgba(54,54,54,1) 60%); 
+
+    &.espacio{
+        padding-top: 64px ;
+    }
+    
+}
+h1,h2,h3,h4,p,li{
+    color: v.$blanco;
+    text-align: center;
+}
+p{
+    font-size: 2rem;
+    line-height: 1.5;
+}
+.contenedor{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3{
+    margin: 2rem 0 2rem 0;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.6rem;
+
+}
+h3{
+    font-size: 3rem;
+}
+
+img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+    margin: 0;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: v.$fucsia;
+    font-family: v.$fuente_principal;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: 2px solid v.$fucsia;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in;
+    display: inline-block;
+
+    &:hover{
+        background-color: v.$fucsia;
+        color: v.$blanco;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
