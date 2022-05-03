@@ -7,14 +7,16 @@
 }
 
 .redes{
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto;
     nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
 
         a{
+            display: block;
+            width: 10rem;
+            height: 10rem;
+            text-align: center;
+            margin-bottom: 1rem;
             font-size: 3rem;
             padding: 3rem;
             color: v.$blanco;
@@ -25,7 +27,18 @@
 
             &:hover{
                 background-color: v.$fucsia;
+                right: -50px;
+            }
+        }
+        @include m.tablet {
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+            align-items: center;
+
+            a:hover{
                 top: -10px;
+                right: 0;
             }
         }
     }
